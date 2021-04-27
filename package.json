@@ -1,0 +1,32 @@
+{
+  "name": "testtruffledeux",
+  "version": "1.0.0",
+  "engines": {
+    "node": "15.11.0"
+  },
+  "description": "blockchain",
+  "main": "truffle-config.js",
+  "private": true,
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node_modules/.bin/webpack && node server/main.js",
+    "build": "webpack"
+  },
+  "author": "Jiddou Youssouf",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "truffle-hdwallet-provider": "^1.0.17"
+  },
+  "devDependencies": {
+    "@truffle/contract": "^4.3.10",
+    "web3": "^1.2.11",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}

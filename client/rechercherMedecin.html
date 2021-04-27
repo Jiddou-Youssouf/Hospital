@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Recherche</title>
+  <meta charset="utf-8"/>
+  
+  <style>
+	h3
+	{
+		font-style: italic;
+		text-shadow	: 6px 6px 5px black;
+	}
+	
+	h1
+	{
+		font-style: italic;
+		text-shadow	: 6px 6px 10px black;
+		text-decoration: underline;
+	}
+	.trait
+	{
+		width: 100%; 
+		height: 40px; 
+		background-color: #8C5DA2;
+	}
+	.titre
+	{
+		display: inline-block;
+	}
+	
+	a
+	{
+		font-style: italic;
+		font-size: x-large;
+	}
+  </style>
+  
+</head>
+
+<body>    
+
+	
+	<marquee> 
+		<h1 class="titre">RECHERCHER UN Medecin </h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+		<h1 class="titre">AFFICHER SES DONNEES PERSONNELLE</h1>
+	</marquee>
+	<center> <a href="index.html">ACCUEIL</a><br/></center>
+	<hr class="trait"> <br/><br/><br/>
+	
+	<center>
+	  <Label for="matricule">C I N : </label> 
+	  <input type="text" name="matricule" id="matricule" required> &nbsp;&nbsp;
+	  <input type="button" value="Rechercher" id="btnRechercher">
+	  <div id="searchResult">
+		<h1>INFORMATION DU MEDECIN AVEC L'IDANTIFIANT <span class="cinResult"></span></h1>
+		<table  align="center" cellspacing="0" cellpadding="0">
+			<tr>
+				<td align="center"><h3>CIN : </h3></td>
+				<td align="center"><span class="cinResult"></span></td>
+			</tr>
+			<tr>
+				<td align="center"><h3>Name : </h3></td>
+				<td align="center"><span class="nomResult"></span></td>
+			</tr>
+		</table>
+	  </div>
+	  <div id="searchNotFound"></div>
+	</center>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="dist/bundle.js"></script>
+</body>
+</html>

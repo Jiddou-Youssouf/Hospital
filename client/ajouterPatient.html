@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Patient</title>
+	<link rel="stylesheet" type="text/css" href="css/ajouterPatient.css"/>
+  <script>
+
+function cambiar_sign_up() {
+  document.querySelector('.cont_forms').className = "cont_forms cont_forms_active_sign_up";
+  document.querySelector('.cont_forms_active_sign_up').style.height = '590px';
+  document.querySelector('.cont_form_sign_up').style.display = "block";
+document.querySelector('.cont_form_login').style.opacity = "0";
+  
+setTimeout(function(){  document.querySelector('.cont_form_sign_up').style.opacity = "1";
+},100);  
+
+setTimeout(function(){   document.querySelector('.cont_form_login').style.display = "none";
+},400);  
+
+
+}
+  </script>
+</head>
+<body>
+	
+	<div class="cotn_principal">
+<div class="cont_centrar">
+
+  <div class="cont_login">    
+    <div class="cont_back_info">
+       <div class="cont_img_back_grey">
+       <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&q=50&fm=jpg&crop=entropy&s=7686972873678f32efaf2cd79671673d" alt="" />
+       </div>
+       
+    </div>
+<div class="cont_forms cont_forms_active_sign_up" >
+    <div class="cont_img_back_">
+       <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&q=50&fm=jpg&crop=entropy&s=7686972873678f32efaf2cd79671673d" alt="" />
+       </div>
+  
+   <div class="cont_form_sign_up">
+    <a href="/medecin_bienvenue" title="Retour"><i class="material-icons">&#xE5C4;</i></a>
+     <h2>Ajout d'un Patient</h2>
+<input type="text" id="sign_up_cin" placeholder="Numéro d'Identification Nationale du Patient" />
+<input type="text" id="sign_up_prenom" placeholder="Prenom" required/><br/>
+<input type="text" id="sign_up_nom" placeholder="Nom" required/>
+<input type="text" placeholder="Maladie" id="sign_up_maladie" required/>
+<button class="btn_sign_up" id="btnRegister">Ajouter</button>
+
+  </div>
+
+    </div>
+    
+  </div>
+ </div>
+</div>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="dist/bundle.js"></script>
+<script src="js/ajouterPatient.js"></script>
+</body>
+</html>
